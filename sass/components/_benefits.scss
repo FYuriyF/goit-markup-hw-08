@@ -1,5 +1,6 @@
 .benefits {
   @include section;
+  
 }
 
 .benefits__container {
@@ -19,7 +20,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    flex-direction: row;
     flex-wrap: nowrap;
   }
 }

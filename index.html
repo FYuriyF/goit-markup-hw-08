@@ -25,7 +25,7 @@
     />
 
     <!-- Custom styles -->
-    <link rel="stylesheet" href="./css/main.min.css"/>
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -41,7 +41,8 @@
               <a
                 href="./index.html"
                 class="site-nav__link site-nav__link--current"
-                >Студія</a>
+                >Студія</a
+              >
             </li>
             <li class="site-nav__item">
               <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
@@ -140,13 +141,14 @@
         </div>
       </section>
       <!-- Наші можливості -->
-      <!-- <section class="capabilities">
+      <section class="capabilities">
         <div class="capabilities__container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="capabilities__list">
             <li class="capabilities__item">
               <div class="capabilities__block">
                 <img
+                  srcset="./images/capabilities/box 1_lg@1x.jpg 1x, ./images/capabilities/box 1_lg@2x.jpg 2x"
                   src="./images/box1.jpg"
                   alt="процес"
                   width="370"
@@ -160,6 +162,7 @@
             <li class="capabilities__item">
               <div class="capabilities__block">
                 <img
+                  srcset="./images/capabilities/box 2_lg@1x.jpg 1x, ./images/capabilities/box 2_lg@2x.jpg 2x"
                   src="./images/box2.jpg"
                   alt="процес"
                   width="370"
@@ -173,6 +176,7 @@
             <li class="capabilities__item">
               <div class="capabilities__block">
                 <img
+                  srcset="./images/capabilities/box 3_lg@1x.jpg 1x, ./images/capabilities/box 3_lg@2x.jpg 2x"
                   src="./images/box3.jpg"
                   alt="процес"
                   width="370"
@@ -185,19 +189,43 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Наша команда -->
-      <!-- <section class="team">
+      <section class="team">
         <div class="team__container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__cards">
-              <img
-                src="./images/team_1.jpg"
-                alt="Працівник"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/img_lg@1x.jpg 1x,
+                    ./images/team/img_lg@2x.jpg 2x
+                  "
+                />
+
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/img_md@1x.jpg 1x,
+                    ./images/team/img_md@2x.jpg 2x
+                  "
+                />
+
+                <!-- phone screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/img_sm@1x.jpg 1x,
+                    ./images/team/img_sm@2x.jpg 2x
+                  "
+                />
+                <img src="./images/team/img_lg@1x.jpg" alt="Працівник" />
+              </picture>
+
               <div class="team__text">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__profession">Product Designer</p>
@@ -251,12 +279,35 @@
               </div>
             </li>
             <li class="team__cards">
-              <img
-                src="./images/team_2.jpg"
-                alt="Працівник"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/img_lg@1x-1.jpg 1x,
+                    ./images/team/img_lg@2x-1.jpg 2x
+                  "
+                />
+
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/img_md@1x-1.jpg 1x,
+                    ./images/team/img_md@2x-1.jpg 2x
+                  "
+                />
+
+                <!-- phone screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/img_sm@1x-1.jpg 1x,
+                    ./images/team/img_sm@2x-1.jpg 2x
+                  "
+                />
+                <img src="./images/team/img_lg@1x-1.jpg" alt="Працівник" />
+              </picture>
               <div class="team__text">
                 <h3 class="team__title">Ольга Рєпіна</h3>
                 <p class="team__profession">Frontend Developer</p>
@@ -310,12 +361,35 @@
               </div>
             </li>
             <li class="team__cards">
-              <img
-                src="./images/team_3.jpg"
-                alt="Працівник"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/img_lg@1x-2.jpg 1x,
+                    ./images/team/img_lg@2x-2.jpg 2x
+                  "
+                />
+
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/img_md@1x-2.jpg 1x,
+                    ./images/team/img_md@2x-2.jpg 2x
+                  "
+                />
+
+                <!-- phone screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/img_sm@1x-2.jpg 1x,
+                    ./images/team/img_sm@2x-2.jpg 2x
+                  "
+                />
+                <img src="./images/team/img_lg@1x-2.jpg" alt="Працівник" />
+              </picture>
               <div class="team__text">
                 <h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__profession">Marketing</p>
@@ -369,12 +443,35 @@
               </div>
             </li>
             <li class="team__cards">
-              <img
-                src="./images/team_4.jpg"
-                alt="Працівник"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/img_lg@1x-3.jpg 1x,
+                    ./images/team/img_lg@2x-3.jpg 2x
+                  "
+                />
+
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/img_md@1x-3.jpg 1x,
+                    ./images/team/img_md@2x-3.jpg 2x
+                  "
+                />
+
+                <!-- phone screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/img_sm@1x-3.jpg 1x,
+                    ./images/team/img_sm@2x-3.jpg 2x
+                  "
+                />
+                <img src="./images/team/img_lg@1x-3.jpg" alt="Працівник" />
+              </picture>
               <div class="team__text">
                 <h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__profession">UI Designer</p>
@@ -429,9 +526,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Постійні клієнти -->
-      <!-- <section class="clients">
+      <section class="clients">
         <div class="clients__container">
           <h2 class="section-title">Постійні клієнти</h2>
           <ul class="clients__list">
@@ -509,7 +606,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- Підвал -->
