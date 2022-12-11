@@ -1,12 +1,30 @@
 .portfolio {
+    @include section;
     
 }
 
+.portfolio__container{
+    @include container;
+
+}
+
 .projects-button__list {
+
     display: flex;
-    justify-content: center;
     padding-top: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 35px;
+
+@media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+
+@media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+  }
+
 }
 
 .projects-button__item {
