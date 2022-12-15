@@ -692,7 +692,7 @@ img {
 
 .team {
   background-color: var(--secondary-bg-color);
-  padding-top: 0;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) and (max-width: 479px) {
