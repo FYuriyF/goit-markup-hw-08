@@ -76,7 +76,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid rgba(236, 236, 236, 1);
 }
 
 .hero__title {
@@ -90,10 +89,13 @@
   text-transform: uppercase;
   color: var(--primary-white-color);
 
-@media screen and (min-width: 1200px) {
-  width: 696px;
-    font-size: 44px;
-  line-height: calc(60 / 44);
-    }
+  @media screen and (max-width: 479px) {
+    width: 100vw;
+  }
 
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+  }
 }

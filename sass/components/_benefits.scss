@@ -43,6 +43,10 @@
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--primary-text-color);
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .benefits__text {
