@@ -1,0 +1,51 @@
+.capabilities {
+  @media screen and (min-width: 1200px) {
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
+}
+
+.capabilities__container {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include container;
+  }
+}
+
+.capabilities__list {
+  display: flex;
+  gap: 30px;
+}
+
+.capabilities__block {
+  position: relative;
+}
+
+.capabilities__block::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 100%;
+  height: 24%;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.capabilities__inscription {
+  position: absolute;
+  bottom: 12%;
+  right: 50%;
+  transform: translate(50%, 50%);
+}
+
+.capabilities__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--secondary-bg-color);
+}
